@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <% include ../partials/header.ejs %>
-</head>
 
 <body>
 
-  <% include ../partials/nav.ejs %>
 
 
 <div class="container">
+  <p>
+    <ul>
+      <li>File must be a csv delimited by commas</li>
+      <li>headers should be "uuid,name,url,album_id"</li>
+    </ul>
+
+  </p>
   <form action="fileupload" method="POST" enctype="multipart/form-data">
     <strong>Csv file to upload:</strong> 
     <input type="file" name="filetoupload"/>
